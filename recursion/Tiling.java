@@ -9,10 +9,11 @@ public class Tiling {
             return 1;
         }
 
-        int ver=tiling(n-1,m);
-        int hor=tiling(n-m,m);
+        // int ver=tiling(n-1,m);
+        // int hor=tiling(n-m,m);
 
-        return  ver+hor;
+        // return  ver+hor;
+        return tiling(n-1, m)+tiling(n-m, m);
     }
 public static void main(String[] args) {
     int width=4;
