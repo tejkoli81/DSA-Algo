@@ -4,18 +4,23 @@ package recursion;
  * Tiling
  */
 public class Tiling {
-    public static int  tiling(int n){
-        if(n==0 || n==1){
+    public static int  tiling(int n,int m){
+        if(n<m){
             return 1;
         }
 
-        int ver=tiling(n-1);
-        int hor=tiling(n-2);
+        int ver=tiling(n-1,m);
+        int hor=tiling(n-m,m);
 
         return  ver+hor;
     }
 public static void main(String[] args) {
-    System.out.println(tiling(4));
+    int width=4;
+    int  height=8;
+
+    System.out.println(tiling(width, height));
+    
+
 }
     
 }
