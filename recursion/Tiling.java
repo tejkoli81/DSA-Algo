@@ -1,8 +1,5 @@
 package recursion;
 
-/**
- * Tiling
- */
 public class Tiling {
     public static int  tiling(int n,int m){
         if(n<m){
