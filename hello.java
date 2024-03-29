@@ -8,6 +8,7 @@
 public class hello {
     public static void kadane(int nums[]){
         int maxSum = 1;
+int demo =0
         int sum = 1;
         for (int i = 0; i < nums.length; i++) {
             sum += nums[i];
