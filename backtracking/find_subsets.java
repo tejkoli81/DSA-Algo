@@ -10,9 +10,11 @@ public class find_subsets {
             }else{
                 System.out.println(ans);
             }
+
+
             return;
         }
-        //recursion
+        //recursion work
         //yes choice
         findsubsets(str,index+1,ans+str.charAt(index));
         //no choice
