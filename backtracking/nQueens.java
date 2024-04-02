@@ -2,19 +2,24 @@ package backtracking;
 
 
 public class nQueens {
-    public static void solveNQ(char board[][],int rows){
+     static int count=0;
+    public static boolean solveNQ(char board[][],int rows){
         //base case
         if(rows == board.length){
             printboard(board);
-            return;
+            count++;
+            return true;
         }
         for(int j=0;j<board.length;j++){
             if(isSafe(board,rows,j)){
             board[rows][j]='Q';
-            solveNQ(board, rows+1);
+            if(solveNQ(board, rows+1)){
+                return true;
+            }
             board[rows][j]='x'; // undo the assignment if it doesn't work out;
         }
     }
+    return false;
     }
     public static boolean isSafe(char[][] board, int row ,int col){
         for(int i=row-1;i>=0;i--){
@@ -46,7 +51,7 @@ public class nQueens {
     }
 
     public static void main(String[] args) {
-        int n=4;
+        int n=10;
         char board [][]=new char[n][n];
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
@@ -54,5 +59,6 @@ public class nQueens {
             }
         }
         solveNQ(board,0);
+        System.out.println("no of ways: "+count);
     }
 }
