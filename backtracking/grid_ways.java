@@ -1,5 +1,5 @@
 package backtracking;
-
+// time Complexitiy is O(2^M+N) which is worst complexitiy
 public class grid_ways {;
     public static int gridways(int i,int j,int m,int n){
 
