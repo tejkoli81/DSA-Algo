@@ -16,6 +16,7 @@ public class Ex_Arraylist {
         list.remove(1);
         list.remove(Integer.valueOf(14));
         System.out.println(list);
+   
         // addAll(Collection object)
         List<Integer> list2=new ArrayList<>();
         list2.addAll(list);
@@ -30,9 +31,47 @@ public class Ex_Arraylist {
         // containsAll(collection obj)
         System.out.println(list2.containsAll(list));
 
+        //removeAll(collection obj)
+
+        // list2.removeAll(list);
+        // System.out.println(list);
+        // System.out.println(list2);
+
+        //get(int idx)
+        System.out.println(list2.get(0));
+
+        //set(int idx,element)
+        list2.set(0, 20);
+        System.out.println(list2);
+
+        //indexOf(value)-> index of value in list
+       System.out.println( list2.indexOf(13));
 
 
+       //listIterator 
+       List<String> list3=new ArrayList();
+       list3.add("Rahul");
+       list3.add("Vivek");
+       list3.add("Abhay");
+       list3.add("Pranav");
+       list3.add("Abhijeet");
 
+            //basic method 
+            for(int i=0;i<list3.size();i++){
+                System.out.println("Name:"+list3.get(i));
+            }
+
+            //For each loop
+            for(String name:list3){
+                System.out.println("name: "+name);
+            }
+
+            // ListIterator 
+            Iterator<String> ne=list3.iterator();
+            while(ne.hasNext()){
+                System.out.println(ne.next());
+            }
+    
 
     }
 }
