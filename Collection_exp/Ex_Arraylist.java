@@ -8,5 +8,10 @@ public class Ex_Arraylist {
         list.add(13);
         list.add(14);
         System.out.println(list);
+        
+        //ADD FORM INDEX
+        list.add(1,30);
+        System.out.println(list);
+
     }
 }
