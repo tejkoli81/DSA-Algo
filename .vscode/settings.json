@@ -1,0 +1,10 @@
+{
+    "java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-22",
+    "java.debug.settings.stepping.skipClasses": [
+
+    ],
+    "java.project.sourcePaths": [
+        "."
+    ],
+    "java.project.referencedLibraries": []
+}

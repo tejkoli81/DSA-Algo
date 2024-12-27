@@ -1,4 +1,4 @@
-package Collection_exp;
+package collection_exp;
 
 class Dog<E>{
     private E id;

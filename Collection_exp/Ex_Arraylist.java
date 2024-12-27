@@ -1,4 +1,4 @@
-package Collection_exp;
+package collection_exp;
 import java.util.*;
 
 public class Ex_Arraylist {
@@ -48,7 +48,7 @@ public class Ex_Arraylist {
        System.out.println( list2.indexOf(13));
 
 
-       //listIterator 
+       //Iterator 
        List<String> list3=new ArrayList();
        list3.add("Rahul");
        list3.add("Vivek");
@@ -66,12 +66,20 @@ public class Ex_Arraylist {
                 System.out.println("name: "+name);
             }
 
-            // ListIterator 
+            // Iterator 
             Iterator<String> ne=list3.iterator();
             while(ne.hasNext()){
                 System.out.println(ne.next());
             }
-    
+        //ListIterator
+        Iterator<String> ie=list3.listIterator();
+            while(ie.hasNext()){
+                System.out.println(ie.next());
+            }
+        
+        //subList(start idx,end idx)
+
+        System.out.println(list3.subList(2,5));
 
     }
 }
